@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
-import styled from 'styled-components'
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { GlobalStyles } from './styles/global';
+
+Modal.setAppElement('#root')
 
 export function App() {
   const [ isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false);
